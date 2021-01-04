@@ -17,7 +17,7 @@ export class DishCategoriesService {
    * fetch the list of dishes categories
    */
   fetchDishCategories(): Observable<any> {
-    return this.httpClient.get<DishCategories>('http://www.mocky.io/v2/5dfccffc310000efc8d2c1ad')
+    return this.httpClient.get<DishCategories>('https://www.mocky.io/v2/5dfccffc310000efc8d2c1ad')
       .pipe(
         tap((data) => { },
           (error: any) => throwError(error)
